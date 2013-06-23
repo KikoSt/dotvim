@@ -1,0 +1,4 @@
+dotvim
+======
+
+synchronize vim configuration
