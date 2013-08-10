@@ -33,8 +33,6 @@ set undolevels=1000 " and undo level
 
 set hidden          "don't close, but hide buffers
 
-set pastetoggle=<F2>
-
 let &t_Co=256
 
 colorscheme desert
@@ -58,6 +56,10 @@ au BufRead,BufNewFile *.php set ft=php.html
 
 nmap :Wq :wq
 nmap :W :w
+
+set number
+nnoremap <F2> :set nonumber!<CR>
+set pastetoggle=<F4>
 
 nmap <F8> :TagbarToggle<CR>
 nmap <F5> :NERDTreeToggle<CR>
