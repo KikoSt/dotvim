@@ -92,7 +92,8 @@ map <up> <nop>
 map <down> <nop>
 map <left> <nop>
 map <right> <nop>
-
+set number
+nnoremap <F2> :set nonumber!<CR>
 
 noremap <leader>bd :Bclose<CR>
 noremap <leader>bl :ls<CR>
@@ -104,3 +105,14 @@ noremap <leader>bx :Bclose!<CR>
 inoremap <C-P> <ESC>:call PhpDocSingle()<CR>i
 nnoremap <C-P> :call PhpDocSingle()<CR>
 vnoremap <C-P> :call PhpDocRange()<CR>
+
+"folding settings
+" set foldmethod=indent   "fold based on indent
+" set foldnestmax=10      "deepest fold is 10 levels
+" set nofoldenable        "dont fold by default
+" set foldlevel=1         "this is just what i use
+
+map ,f :set foldmethod=indent<cr>zM<cr>
+map ,F :set foldmethod=manual<cr>zR<cr>
+
+:set tags=~/.vim/tags/ctags
