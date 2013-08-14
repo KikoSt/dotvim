@@ -118,3 +118,4 @@ map ,f :set foldmethod=indent<cr>zM<cr>
 map ,F :set foldmethod=manual<cr>zR<cr>
 
 :set tags=~/.vim/tags/ctags
+:set shell=/bin/bash
