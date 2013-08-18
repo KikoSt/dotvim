@@ -82,7 +82,7 @@ function! <SID>StripTrailingWhitespaces()
 endfunction
 autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
 
-call pathogen#infect()
+execute pathogen#infect()
 call pathogen#helptags()
 
 syntax on
@@ -106,3 +106,5 @@ noremap <leader>bx :Bclose!<CR>
 inoremap <C-P> <ESC>:call PhpDocSingle()<CR>i
 nnoremap <C-P> :call PhpDocSingle()<CR>
 vnoremap <C-P> :call PhpDocRange()<CR>
+
+let g:airline_powerline_fonts = 1
