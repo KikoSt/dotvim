@@ -82,7 +82,7 @@ function! <SID>StripTrailingWhitespaces()
 endfunction
 autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
 
-call pathogen#infect()
+execute pathogen#infect()
 call pathogen#helptags()
 
 syntax on
@@ -108,6 +108,7 @@ inoremap <C-P> <ESC>:call PhpDocSingle()<CR>i
 nnoremap <C-P> :call PhpDocSingle()<CR>
 vnoremap <C-P> :call PhpDocRange()<CR>
 
+<<<<<<< HEAD
 "folding settings
 " set foldmethod=indent   "fold based on indent
 " set foldnestmax=10      "deepest fold is 10 levels
@@ -119,3 +120,5 @@ map ,F :set foldmethod=manual<cr>zR<cr>
 
 :set tags=~/.vim/tags/ctags
 :set shell=/bin/bash
+
+let g:airline_powerline_fonts = 1
