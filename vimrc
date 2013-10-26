@@ -87,6 +87,7 @@ call pathogen#helptags()
 
 syntax on
 filetype plugin on
+au BufNewFile, BufRead *.wsdl set filetype=xml
 helptags ~/.vim/doc
 
 " lets you save files that must be edited as super user/root
