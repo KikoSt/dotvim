@@ -96,6 +96,7 @@ map <left> <nop>
 map <right> <nop>
 set number
 nnoremap <F2> :set nonumber!<CR>
+nnoremap <F6> :GundoToggle<CR>
 
 noremap <leader>bd :Bclose<CR>
 noremap <leader>bl :ls<CR>
