@@ -123,3 +123,5 @@ map ,F :set foldmethod=manual<cr>zR<cr>
 :set shell=/bin/bash
 
 let g:airline_powerline_fonts = 1
+
+command Todo noautocmd vimgrep /TODO\|FIXME/j ** | cw
