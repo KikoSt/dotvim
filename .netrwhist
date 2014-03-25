@@ -1,8 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
-let g:netrw_dirhist_1='/home/kiko/.ncmpcpp'
-let g:netrw_dirhist_2='/home/kiko/work/adsales/httpdocs/modules/FINANCEADS'
-let g:netrw_dirhist_3='/var/www/www.laranet.dev/application/views/home'
-let g:netrw_dirhist_4='/var/www/www.laranet.dev/application'
-let g:netrw_dirhist_5='/var/www/www.laranet.dev/public/ajax/modules'
-let g:netrw_dirhist_6='/var/www/www.laranet.dev/application/views/statistics'
