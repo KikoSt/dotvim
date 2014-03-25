@@ -51,9 +51,6 @@ autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 au BufWinLeave * mkview
 au BufWinEnter * silent! loadview
 
-" activate html snippets for php files, too ...
-au BufRead,BufNewFile *.php set ft=php.html
-
 nmap :Wq :wq
 nmap :W :w
 
@@ -85,8 +82,11 @@ autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
 execute pathogen#infect()
 call pathogen#helptags()
 
+
 syntax on
 filetype plugin on
+" activate html snippets for php files, too ...
+au BufRead,BufNewFile *.php set ft=php.html
 au BufNewFile, BufRead *.wsdl set filetype=xml
 helptags ~/.vim/doc
 
