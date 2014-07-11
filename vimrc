@@ -97,7 +97,9 @@ map <left> <nop>
 map <right> <nop>
 set number
 nnoremap <F2> :set nonumber!<CR>
-nnoremap <F6> :GundoToggle<CR>
+nnoremap <F5> :w\|!php5 %<CR>
+nnoremap <F6> :w\|!php5 -l %<CR>
+nnoremap <F7> :GundoToggle<CR>
 
 noremap <leader>bd :Bclose<CR>
 noremap <leader>bl :ls<CR>
@@ -130,3 +132,7 @@ let g:airline_powerline_fonts = 1
 nnoremap <F9> :update<bar>make<bar>cwindow<cr>
 
 command Todo noautocmd vimgrep /TODO\|FIXME/j ** | cw
+
+set tags=~/.vim/mytags/merchantcenter
+
+let g:syntastic_php_checkers = ['php', 'phpcs', 'phpmd']
